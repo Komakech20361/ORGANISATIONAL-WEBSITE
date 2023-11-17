@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fr. Leopoldo Anywar Secondary School</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Admission.html">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+         <br>
+     <style>
+        body {
+            background-color: #007bff; 
+            color: #fff; 
+            padding: 50px;
+            text-align: center;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 login-container">
+                <h1>Fr. Leopoldo Anywar Secondary School</h1>
+                <form onsubmit="return loginUser()">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button style="background-color: navy; color: black; font-size: 24px; margin-right: 10px; border-radius: 10px; border-bottom: 10px;"><a href="index.html">Login</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function loginUser() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (validateLogin(username, password)) {
+        alert("Login successful!");
+        window.location.href = "home.html";
+    } else {
+        alert("Invalid username or password. Please try again.");
+    }
+
+    return false;
+}
+
+            
+            alert("Login successful!");
+            window.location.href = "home.html";
+            return false; 
+        
+    </script>
+
+</body>
+</html>
+
+
